@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Aladini';
+        src: url('fonts/Aladini.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+
+body {
+    font-family: 'Aladini';
+    font-size: 4ch;
+}
+
+  body {
+      background: #faf7f3;
+      color: #333;
+  }
+
+  h1,
+  h2 {
+    font-family: 'Aladini';
+      color: #7a1a22;
+  }
+
+ .my_nf {
+    font-family:  'cursive' !important;
+  }
+
+  .hero-img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .quote {
+      font-style: italic; 
+  }
+
+  .day-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #7a1a22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #7a1a22;
+      margin: 0 auto;
+  }
+
+  .day-circle.active {
+      background: #7a1a22;
+      color: #fff;
+  }
+
+  .event-icon {
+      font-size: 2rem;
+      color: #7a1a22;
+  }
+
+  footer {
+      background: #7a1a22;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+  }
+
+  /* SVG line animation */
+  .svg-line path {
+      stroke: #7a1a22;
+      stroke-width: 2;
+      fill: none;
+      stroke-dasharray: 1000;
+      /* length of path */
+      stroke-dashoffset: 1000;
+      /* start hidden */
+      transition: stroke-dashoffset 2s ease-out;
+      z-index: 0;
+  }
+
+  .svg-line.animate path {
+      stroke-dashoffset: 0;
+      /* reveal */
+  }
+.img-fluid{
+    width: 100%;
+}
+ /* Vertical Center Line */
+ .timeline-line {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     width: 4px;
+     background: #7a1a22;
+     margin-left: -2px; 
+ }
+@media (max-width: 768px) {
+    .timeline-line {
+        display: none;
+    }
+}
+ /* Connector lines */
+ .timeline-connector {
+     position: absolute;
+     top: 50%;
+     width: 0;
+     height: 3px;
+     background: #7a1a22;
+     transition: width 1s ease;
+     z-index: 2;
+ }
+
+ .connector-left {
+     right: 50%;
+ }
+
+ .connector-right {
+     left: 50%;
+ }
+
+ /* Animate connectors when visible */
+ [data-aos="fade-down"].aos-animate.timeline-connector {
+     width: 120px;
+     /* adjust for spacing */
+ }
+ 
+
+img {
+    width: 300px;
+    height: auto;
+    
+    -webkit-mask-image: radial-gradient(circle, rgba(22, 11, 0, 111) 70%, rgba(111, 111, 111, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    mask-image: radial-gradient(circle, rgba(22, 11, 0, 111) 70%, rgba(111, 111, 111, 0) 100%);
+}
