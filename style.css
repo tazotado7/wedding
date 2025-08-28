@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Aladini';
-        src: url('fonts/Aladini.woff') format('woff');
+        src:  url('fonts/aladini.woff2') format('woff2'),
+         url('fonts/aladini.woff') format('woff'),
+         url('fonts/aladini.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
 }
